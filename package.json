@@ -1,0 +1,31 @@
+{
+  "name": "github-action-commit-comment",
+  "version": "1.0.0",
+  "description": "Create a comment for a commit on GitHub",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src/index.js",
+    "package": "ncc build src/index.js -o dist",
+    "test": "eslint src/index.js && jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/restreamio/github-action-commit-comment.git"
+  },
+  "keywords": [],
+  "author": "Restream",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/restreamio/github-action-commit-comment/issues"
+  },
+  "homepage": "https://github.com/restreamio/github-action-commit-comment#readme",
+  "dependencies": {
+    "@actions/core": "1.5.0",
+    "@actions/github": "5.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "0.30.0",
+    "eslint": "7.32.0",
+    "jest": "27.1.0"
+  }
+}
